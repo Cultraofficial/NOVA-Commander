@@ -1,0 +1,3 @@
+ai_model: mistral-7b
+log_level: debug
+auto_restart: true
