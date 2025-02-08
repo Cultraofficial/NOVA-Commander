@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  ai-core:
+    container_name: nova_ai_core
+    image: mistralai/mistral-7b
+    environment:
+      - AI_CORE_NAME=NOVA
+      - CONFIG_PATH=/app/config.yaml
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    restart: always
