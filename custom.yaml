@@ -1,0 +1,31 @@
+            - name: Custom Models Action
+  # You may pin to the exact commit or the version.
+  # uses: datarobot-oss/custom-models-action@0a5d55659824973261d6b49389569dd4e28795bf
+  uses: datarobot-oss/custom-models-action@v1.6.0
+  with:
+    # DataRobot authentication API token.
+    api-token: 
+    # DataRobot frontend web server.
+    webserver: 
+    # The branch for which pull request and push events will trigger the action.
+    branch: 
+    # Determines the namespace under which models and deployments will be created, updated and
+deleted.
+
+    namespace: # optional
+    # Whether to detected local deleted model definitions and consequently delete them
+in DataRobot.
+
+    allow-model-deletion: # optional, default is false
+    # Whether to detect local deleted deployment definitions and consequently delete them
+in DataRobot.
+
+    allow-deployment-deletion: # optional, default is false
+    # Whether to handle custom inference models only, without deployments..
+
+    models-only: # optional, default is false
+    # Whether a request to an HTTPS URL will be made without a certificate verification.
+
+    skip-cert-verification: # optional, default is false
+          
+          
